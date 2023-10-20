@@ -1,7 +1,8 @@
 import sayHello from '../utils/helloworld.mjs';
 
-it("Hello World", ()=>{
-
-    console.log(sayHello);
+it("Should say hello", ()=>{
+    const helloString=sayHello();
+    console.log(helloString);
     
+    expect(helloString).toBe("hello");
 });
